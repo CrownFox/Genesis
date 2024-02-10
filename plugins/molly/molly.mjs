@@ -28,12 +28,12 @@ import pug from 'pug'
 
 // Create an instance of OpenAI
 const openai = new OpenAI({
-    apiKey: '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'
+    apiKey: ''
 })
 
 // Create an instance of Pinecone.io
 const pinecone = new Pinecone({
-    apiKey: '9dcbf03c-7a4c-42a0-83c2-5b048d221351',
+    apiKey: '',
     environment: 'us-west4-gcp'
 })
 
