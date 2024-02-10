@@ -1,0 +1,18 @@
+// Molly index page
+html 
+    head
+        title Critical Genesis -> About
+        link(rel='stylesheet' href='/css/shared.css')
+        link(rel='stylesheet' href='/about/css/index.css')
+        link(rel='icon' href='/img/icon.png')
+    body
+        .page
+            //Import navbar
+            - var page = 'about'
+            include ../../pug/templates/navbar.pug
+            .content
+                h1 About Us
+                - var data = ['kassi.jpg', 'Kassidy Lechner', 'Redding, CA', 'kassidy@criticalgenesis.net', 'discord', 'crownfox', '+1 (530) 339 1135']
+                include ../../pug/templates/profile_card.pug
+                - data = [null, 'Alice', 'N/A', 'N/A', 'discord', 'rwbyrocks', 'N/A']
+                include ../../pug/templates/profile_card.pug

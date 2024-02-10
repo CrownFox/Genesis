@@ -1,0 +1,14 @@
+// Critical Genesis index page
+html 
+    head
+        title Critical Genesis
+        link(rel='stylesheet' href='/css/shared.css')
+        link(rel='icon' href='/img/icon.png')
+    body
+        .page
+            //Import navbar
+            - var page = 'main'
+            include ../plugins/pug/templates/navbar.pug
+            .content
+                h1 Welcome
+                p This website is a work in progress, so please excuse the mess.

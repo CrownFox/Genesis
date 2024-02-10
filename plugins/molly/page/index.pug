@@ -1,0 +1,30 @@
+// Molly index page
+html 
+    head
+        title Critical Genesis -> Molly
+        link(rel='stylesheet' href='/css/shared.css')
+        link(rel='stylesheet' href='/molly/css/index.css')
+        link(rel='icon' href='/img/icon.png')
+    body
+        .page
+            //Import navbar
+            - var page = 'molly'
+            include ../../pug/templates/navbar.pug
+            .content
+                if !dev
+                    h1 Restricted Access
+                    p Currently Molly is only available in testing environments
+                    h2 Online Assistant 
+                    p Molly is an online virtual assistant who can use the open internet to help you with your daily tasks.
+                    h2 Memory Driven
+                    p Leveraging the power of pinecone.io, Molly is able to learn from her interactions with you. This allows her to become more useful over time, and to better understand your needs.
+                    p All registered users of Molly will be given their own pinecone.io memory, which will be used to store their personal information. This memory will be private, and only accessible by Molly when you are the one interacting with her.
+                if dev
+                    script(type="text/javascript" src='/js/jquery-3.7.1.min.js')
+                    script(type="text/javascript" src='/molly/js/index.js')
+                    .chat
+                        #messages
+                        .test
+                            input(type='text' placeholder='Username' id='username_input')
+                            input(type='text' placeholder='Prompt' id='prompt_input')
+                            input(type='button' value='Send' id='send_button')

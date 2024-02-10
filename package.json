@@ -1,0 +1,18 @@
+{
+  "name": "genesiscms",
+  "version": "1.0.0",
+  "description": "Critical Genesis Website",
+  "main": "index.mjs",
+  "author": "CrownFox",
+  "license": "MIT",
+  "dependencies": {
+    "@pinecone-database/pinecone": "^1.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "openai": "^4.12.1",
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "start": "node index.mjs"
+  }
+}

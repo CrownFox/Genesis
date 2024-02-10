@@ -1,0 +1,19 @@
+.profile-card
+    .profile-picture 
+        img(src=data[0] != null ? '/img/profile/' + data[0] : '/img/profile/default.png')
+    .profile-info 
+        .profile-info-name #{data[1]}
+        .profile-info-location 
+            span 📍 
+            span #{data[2]}
+        .profile-info-email 
+            span 📧 
+            span #{data[3]}
+        if data[4]
+            .profile-info-social 
+                .profile-info-social-icon 
+                    img(src='/img/icons/' + data[4] + '.png')
+                .profile-info-social-username #{data[5]}
+        .profile-info-phone 
+            span 📱 
+            span #{data[6]}
